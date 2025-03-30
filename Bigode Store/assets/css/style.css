@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lexend:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Lexend", sans-serif;
+}
+
+.navbar, .home, .cards {
+    max-width: 1280px;
+    margin: auto;
+}
+
+header {
+    background-image: url(../img/bg.svg); /* adicionar imagem de fundo */
+    background-position: center; /* centralizar imagem de fundo */
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    & .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0;
+        align-items: center;
+
+        & nav {
+            display: flex;
+            gap: 50px;
+
+            & a {
+                color: #EFEFEFB8;
+                font-size: 18px;
+            }
+
+            & a:first-child {
+                color: #FFF;
+            }
+        }
+    }
+
+    & .btns {
+        display: flex;
+        gap: 16px;
+
+        & button {
+            padding: 11px 16px;
+            background: #3B44F6;
+            border-radius: 8px;
+            border: none;
+            color: #FFFFFF;
+        }
+
+        & button:last-child {
+            background: transparent;
+            border: 1px solid #FFF;
+        }
+    }
+}
+
+    .home {
+        height: calc(100vh - 190px);
+        margin-top: 114px;
+
+        & h1 {
+            margin-bottom: 26px;
+            color: #FFFFFF;
+            font-size: 48px;
+        }
+
+        & p {
+            font-size: 24px;
+            color: #FFFFFF;
+            margin-bottom: 64px;
+        }
+
+        & button {
+            padding: 16px 32px;
+            background: #3B44F6;
+            border-radius: 8px;
+            border: none;
+            color: #FFFFFF;
+        }
+    }
+
+main {
+    padding: 70px 182px;
+    gap: 60px;
+
+    & .title {
+
+        & h2 {
+            display: flex;
+            flex-direction: column;
+            font: 36px;
+            font-weight: 600;
+            text-align: center;
+            color: #181818;
+            line-height: 140%;
+        }
+
+        & p {
+            display: flex;
+            flex-direction: column;
+            font-size: 18px;
+            font-weight: 400;
+            text-align: center;
+            color: #323232;
+            line-height: 150%;
+        }
+    }
+
+    & .cards {
+        gap: 83px;
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+        padding: 60px;
+
+        & .card {
+            gap: 25px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 130%;
+            letter-spacing: 0%;
+            color: #181818;
+        }
+    }
+}
